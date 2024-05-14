@@ -17,8 +17,14 @@ body {
 }
 .header__container {
   color: white;
+
   background: url('./assets/images/background-pattern-mobile.svg') no-repeat 0px -65px;
   height: 25%;
+}
+@media (min-width: 376px) {
+  .header__container {
+    background: url('./assets/images/background-pattern-desktop.svg');
+  }
 }
 .main__contaier {
   position: absolute;
@@ -31,6 +37,16 @@ body {
   border-radius: 1rem;
   align-self: center;
   padding: 2rem 1.5rem 2rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .main__contaier {
+    max-width: 60rem;
+  }
+}
+@media (min-width: 425px) {
+  .main__contaier {
+    margin-top: 5rem;
+  }
 }
 .title_faq {
   display: flex;
