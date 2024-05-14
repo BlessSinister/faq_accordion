@@ -10,4 +10,65 @@ html {
 }
 body {
   background: hsl(275, 100%, 97%);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.header__container {
+  color: white;
+  background: url('./assets/images/background-pattern-mobile.svg') no-repeat 0px -65px;
+  height: 25%;
+}
+.main__contaier {
+  position: absolute;
+
+  top: 11.5rem;
+  max-width: 35rem;
+  width: 100%;
+
+  background: white;
+  border-radius: 1rem;
+  align-self: center;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+.title_faq {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+img {
+  max-width: 3rem;
+}
+.title_faq > h1 {
+  font-size: 4.2rem;
+  margin-bottom: 1.5rem;
+}
+.item__wrapper_titel {
+  display: flex;
+  align-items: center;
+}
+.item__wrapper_titel > h2 {
+  max-width: 82%;
+  font-size: 1.6rem;
+  margin-right: auto;
+}
+.item__wrapper_titel > img {
+  max-width: 3rem;
+  margin-right: 1rem;
+}
+.main__wrapper_items {
+  padding: 2rem;
+}
+.items {
+  display: none;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: hsl(292, 16%, 49%);
+}
+.last_item {
+  margin-bottom: 0;
+}
+.active {
+  display: block;
 }
